@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import data from './library/data';
+import Usercard from './Usercard';
+
 
 class App extends Component {
   render() {
@@ -10,9 +13,10 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+
+          <Usercard data={data}/>
+<footer className="footer">
+</footer>
       </div>
     );
   }
