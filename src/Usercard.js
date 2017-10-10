@@ -27,7 +27,7 @@ class Usercard extends Component {
                       </Row>
                      <Row>
                        <Col md={4} className="imgBox">
-                         <img src={item.img} width="125em" height="auto" />
+                         <img src={item.img} width="125em" height="auto" alt="fuckyou"/>
                        </Col>
                        <Col md={4} className="listStats">
                          <ul>
