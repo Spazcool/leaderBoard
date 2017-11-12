@@ -1,4 +1,5 @@
-export default [{
+export default [
+    {
         "username": "heroiczero",
         "img": "https://avatars.githubusercontent.com/u/21147717?v=3",
         "alltime": 1513,

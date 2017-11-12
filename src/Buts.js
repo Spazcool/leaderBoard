@@ -6,13 +6,14 @@ var buttonStyle = {
 };
 
 class Buts extends Component {
-
   render() {
     return (
       <button
         className="btn btn-default"
         style={buttonStyle}
-        onClick={this.props.handleClick}>{this.props.label}</button>
+        onClick={this.props.handleClick}>
+          {this.props.label}
+      </button>
     );
   }
 };
