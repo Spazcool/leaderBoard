@@ -4,16 +4,18 @@ import { Col, Row, Grid } from 'react-bootstrap'
 // import { Grid } from 'react-flexbox-grid'
 
 class Usercard extends Component {
+  componentWillMount () {
+    console.log('Will here? ', this.props.alltime.length, this.props.recent.length)
+  }
+  componentDidMount () {
+    console.log('Did here? ', this.props.alltime.length, this.props.recent.length)
+  }
   render () {
-    let sortAll = []
-    if (this.props.buttonVal) {
-      sortAll = this.props.data.sort(function (a, b) {
-        return parseFloat(b.alltime) - parseFloat(a.alltime)
-      })
+    let sortAll = this.props.alltime
+    if (this.props.alltimeToggle) {
+      sortAll.sort((a, b) => parseFloat(b.alltime) - parseFloat(a.alltime))
     } else {
-      sortAll = this.props.data.sort(function (a, b) {
-        return parseFloat(b.recent) - parseFloat(a.recent)
-      })
+      sortAll = this.props.recent.sort((a, b) => parseFloat(b.recent) - parseFloat(a.recent))
     }
     return (
       sortAll.map((item, index) => {
@@ -45,5 +47,4 @@ class Usercard extends Component {
     )
   }
 }
-
 export default Usercard
