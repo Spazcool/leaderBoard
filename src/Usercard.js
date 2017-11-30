@@ -5,9 +5,6 @@ import { Col, Row, Grid } from 'react-bootstrap'
 const month = printMonth()
 
 class Usercard extends Component {
-  componentWillMount () {
-    // console.log('Will here? ', this.props.alltime.length, this.props.recent.length)
-  }
   componentDidMount () {
     console.log('Mounted: ', this.props.alltime.length, this.props.recent.length)
   }
@@ -21,24 +18,21 @@ class Usercard extends Component {
     return (
       sortAll.map((item, index) => {
         return (
-          <Grid fluid className='Usercard' key={item.username} xs={8} sm={10} lg={6}>
-            <Row className='userTitle'>
-              <Col xs={1} />
+          <Grid className='Usercard' key={item.username} xs={8}>
+            <Row className='userTitle' xs={12}>
               <Col xs={10}>
-                <h2>{item.username}</h2>
+                <a href={'https://www.freecodecamp.org/' + item.username}><h1>{item.username}</h1></a>
               </Col>
-              <Col xs={1}>
-                {index + 1}
+              <Col xs={2}>
+                <h1 className='ranking'>{index + 1}</h1>
               </Col>
             </Row>
-            <Row className='imgRank'>
+            <Row className='info' xs={12}>
               <Col xs={6}>
-                <img src={item.img} width='70%'height='auto' alt={item.username} />
+                <a href={'https://www.freecodecamp.org/' + item.username}><img src={item.img} width='50%'height='auto' alt={item.username} /></a>
               </Col>
               <Col xs={6} className='numbers'>
-                {item.alltime} / Total
-                <br />
-                {item.recent} / {month}
+                {this.props.alltimeToggle ? item.alltime + ' Points in Total' : item.recent + ' Points in ' + month}
               </Col>
             </Row>
           </Grid>

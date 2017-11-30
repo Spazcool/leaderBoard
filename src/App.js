@@ -40,7 +40,7 @@ class App extends Component {
       console.log('Rendering Users.')
       return (
         <div className='App'>
-          <Buts onClick={this.handleClick.bind(this)} label={this.state.alltimeToggle.toString()} />
+          <Buts onClick={this.handleClick.bind(this)} label={this.state.alltimeToggle ? 'Recent' : 'Alltime'} />
           <header className='App-header'>
             <h1>The Top Dogs</h1>
           </header>
@@ -53,12 +53,14 @@ class App extends Component {
         </div>
       )
     }
-    return <div className='loaderContainer'>
-      <div className='loader'>
-        <div id='largeBox' />
-        <div id='smallBox' />
+    return (
+      <div className='loaderContainer'>
+        <div className='loader'>
+          <div id='largeBox' />
+          <div id='smallBox' />
+        </div>
       </div>
-    </div>
+    )
   }
 }
 

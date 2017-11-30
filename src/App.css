@@ -3,8 +3,12 @@ body {
   background-color: #34495e;
   display: flex;
   justify-content: center;
-  text-align: center;
+  margin: 0;
+  padding: 0;
   width: 100vw;
+}
+.App{
+  width: 90vw;
 }
 .App-header {
     color: white;
@@ -12,9 +16,9 @@ body {
 }
 
 .buttonStyle{
-    display: inline-block;
-    margin: 10px;
-    padding: 5px;
+  padding: 5px;
+  position: fixed;
+  z-index: 1;
 }
 
 .Usercard {
@@ -25,31 +29,17 @@ body {
 .userTitle {
   background-color: white;
   color: black;
-  text-align: center;
 }
-.imgRank{
+
+.ranking{
+  text-align: left;
+  font-weight: bold;
+}
+.info{
   margin: 1em 0 1em 0;
 }
-
-/*.alltimeNumber {
-  float: left;
-}
-.recentNumber {
-  float: right;
-}*/
-
-.rank {
-    /*display: inline-block;*/
-    /*font-size: 5em;*/
-}
-/*
-#tiny {
-    font-size: 1em;
-    transform: translateY(-50px);
-}*/
-
-ul {
-    list-style: none;
+.numbers{
+  font-size: 5vw;
 }
 
 .footer {
