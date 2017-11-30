@@ -4,98 +4,56 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
-  /*height: 100vh;*/
-    /*width: 100vw;
-  margin: 0;*/
+  width: 100vw;
 }
 .App-header {
-    /*background-color: grey;*/
-    color: #222;
-    height: 150px;
-    padding: 20px;
-}
-
-.App-title {
-    font-size: 1.5em;
+    color: white;
+    display: inline-block;
 }
 
 .buttonStyle{
-    /*height: 50px;*/
+    display: inline-block;
     margin: 10px;
     padding: 5px;
-    /*width: 50px;*/
 }
 
 .Usercard {
-    /*margin: 0 auto;*/
-    /*min-height: 150px;*/
-    /*width: 50%;*/
-    background-color: red;
-    border: 5px solid black;
-    /*text-align: center;*/
+  background-color: #00FA9A;
+  margin-bottom: 1em;
 }
 
-#backThis {
-    background-color: black;
+.userTitle {
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+.imgRank{
+  margin: 1em 0 1em 0;
 }
 
-#userTitle {
-    background-color: blue;
-    color: white;
-    font-size: 2em;
-    text-align: center;
+/*.alltimeNumber {
+  float: left;
 }
+.recentNumber {
+  float: right;
+}*/
 
-.imgBox {
-    /*border: 1px solid green;*/
-    /*width: 30%;
-    height: 100%;
-    display: inline-block;
-    margin-top: 25px;*/
-}
-
-.listStats {
-    /*border: 1px solid yellow;*/
-    font-size: 0.9em;
-    /*width: 30%;
-    height: 100%;
-    display: inline-block; */
-    text-align: left;
-}
-
-.numbers {
-    font-size: 2em;
-}
-
-.rankBox {
-    /*border: 1px solid blue;*/
+.rank {
+    /*display: inline-block;*/
     /*font-size: 5em;*/
-    /*width: 30%;
-    height: 100%;
-    display: inline-block;*/
 }
-
-.thing {
-    display: inline-block;
-    font-size: 5em;
-}
-
+/*
 #tiny {
     font-size: 1em;
     transform: translateY(-50px);
-}
+}*/
 
 ul {
     list-style: none;
 }
 
 .footer {
-    /*background-color: blue;*/
+  color: white;
   display: block;
   min-height: 150px;
-
-}
-
-.somewhere {
-    background-color: black;
 }

@@ -40,9 +40,9 @@ class App extends Component {
       console.log('Rendering Users.')
       return (
         <div className='App'>
+          <Buts onClick={this.handleClick.bind(this)} label={this.state.alltimeToggle.toString()} />
           <header className='App-header'>
             <h1>The Top Dogs</h1>
-            <Buts onClick={this.handleClick.bind(this)} label={this.state.alltimeToggle.toString()} />
           </header>
           <Usercard alltime={this.state.alltime} recent={this.state.recent} alltimeToggle={this.state.alltimeToggle} />
           <footer className='footer'>
