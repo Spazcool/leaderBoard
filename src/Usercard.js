@@ -18,16 +18,16 @@ class Usercard extends Component {
     return (
       sortAll.map((item, index) => {
         return (
-          <Grid className='Usercard' key={item.username} xs={8}>
-            <Row className='userTitle' xs={12}>
+          <Grid className='user' key={item.username}>
+            <Row className='userTitle'>
               <Col xs={10}>
                 <a href={'https://www.freecodecamp.org/' + item.username}><h1>{item.username}</h1></a>
               </Col>
               <Col xs={2}>
-                <h1 className='ranking'>{index + 1}</h1>
+                <span className='ranking'>{index + 1}</span>
               </Col>
             </Row>
-            <Row className='info' xs={12}>
+            <Row className='userInfo'>
               <Col xs={6}>
                 <a href={'https://www.freecodecamp.org/' + item.username}><img src={item.img} width='50%'height='auto' alt={item.username} /></a>
               </Col>

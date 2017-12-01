@@ -1,18 +1,33 @@
 body {
-  align-items: center;
+  /*align-items: center;*/
   background-color: #34495e;
-  display: flex;
-  justify-content: center;
+  /*display: flex;
+  justify-content: center;*/
   margin: 0;
   padding: 0;
   width: 100vw;
+  max-width:100%;
+  overflow-x:hidden;
+
 }
+
 .App{
-  width: 90vw;
+  /*align-items: center;*/
+  /*border: 1px solid red;*/
+  /*display: flex;*/
+  /*justify-content: center;*/
+  max-width:100%;
+  margin: 0;
+  overflow-x:hidden;
+  padding: 0;
+  position: static;
+  width: 100%;
 }
 .App-header {
-    color: white;
-    display: inline-block;
+  /*border: 1px solid red;*/
+  color: white;
+  text-align: center;
+  /*display: inline-block;*/
 }
 
 .buttonStyle{
@@ -20,23 +35,42 @@ body {
   position: fixed;
   z-index: 1;
 }
+.homehome{
+  /*border: 1px solid red;*/
+	position: absolute;
+  top: 0;
+  width: 100%;
+	/*z-index: 1;*/
+}
+.home{
+  background-color: black;
+  /*border: 1px solid blue;*/
+  float:right;
+}
 
-.Usercard {
+.user {
   background-color: #00FA9A;
   margin-bottom: 1em;
+  padding: 0;
+  width: 80%;
 }
 
 .userTitle {
   background-color: white;
   color: black;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 .ranking{
-  text-align: left;
   font-weight: bold;
+  text-align: left;
 }
-.info{
+
+.userInfo{
   margin: 1em 0 1em 0;
+  width: 100%;
 }
 .numbers{
   font-size: 5vw;
