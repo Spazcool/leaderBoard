@@ -29,10 +29,15 @@ class Usercard extends Component {
             </Row>
             <Row className='userInfo'>
               <Col xs={6}>
-                <a href={'https://www.freecodecamp.org/' + item.username}><img src={item.img} width='50%'height='auto' alt={item.username} /></a>
+                <center>
+                  <a href={'https://www.freecodecamp.org/' + item.username}><img src={item.img} width='50%'height='auto' alt={item.username} /></a>
+                </center>
               </Col>
-              <Col xs={6} className='numbers'>
-                {this.props.alltimeToggle ? item.alltime + ' Points in Total' : item.recent + ' Points in ' + month}
+              <Col xs={6}>
+                <center>
+                  <Col xs={12} className='numbers'>{this.props.alltimeToggle ? item.alltime : item.recent}</Col>
+                  <Col xs={12}>{this.props.alltimeToggle ? 'Total' : month}</Col>
+                </center>
               </Col>
             </Row>
           </Grid>

@@ -5,7 +5,7 @@ class Buts extends Component {
   render () {
     return (
       <button
-        className='btn buttonStyle'
+        className='btn toggleButton buttonStyle'
         onClick={this.props.onClick}>
         {this.props.label}
       </button>

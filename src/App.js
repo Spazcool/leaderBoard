@@ -43,7 +43,7 @@ class App extends Component {
           <Buts onClick={this.handleClick.bind(this)} label={this.state.alltimeToggle ? 'Recent' : 'Alltime'} />
           <div className='App-header'>
             <div className='homehome'>
-              <div className='home btn'>home</div>
+              <a href='http://www.spazcool.com/' className='home btn buttonStyle'>Home</a>
             </div>
             <h1>The Top Dogs</h1>
           </div>
