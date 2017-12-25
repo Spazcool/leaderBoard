@@ -44,9 +44,8 @@ body {
 .user {
   background-color: whitesmoke;
   border-radius: 5px;
-  margin-bottom: 1em;
-  padding: 0;
-  width: 80%;
+  margin: 5px;
+  padding: 5px;
 }
 
 .userTitle {
@@ -54,17 +53,23 @@ body {
   border-radius: 5px 5px 0 0;
   color: black;
   margin: 0;
+  overflow: hidden;
   padding: 0;
   width: 100%;
 }
 .userTitle a{
+  border: 1px solid blue;
   color: black;
+  float: left;
+  font-size: 2em;
   text-decoration: none;
 }
 
 .ranking{
+  border: 1px solid red;
+  float: right;
   font-weight: bold;
-  text-align: left;
+  /*text-align: left;*/
 }
 
 .userInfo{

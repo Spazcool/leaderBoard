@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import printMonth from './month'
 import './App.css'
-import { Col, Row, Grid } from 'react-bootstrap'
+// import { Col, Row, Grid } from 'react-bootstrap'
 const month = printMonth()
 
 class Usercard extends Component {
@@ -18,29 +18,25 @@ class Usercard extends Component {
     return (
       sortAll.map((item, index) => {
         return (
-          <Grid className='user' key={item.username}>
-            <Row className='userTitle'>
-              <Col xs={10}>
-                <a href={'https://www.freecodecamp.org/' + item.username}><h1>{item.username}</h1></a>
-              </Col>
-              <Col xs={2}>
-                <span className='ranking'>{index + 1}</span>
-              </Col>
-            </Row>
-            <Row className='userInfo'>
-              <Col xs={6}>
+          <div className='user' key={item.username}>
+            <div className='userTitle'>
+              <a href={'https://www.freecodecamp.org/' + item.username}>{item.username}</a>
+              <span className='ranking'>{index + 1}</span>
+            </div>
+            <div className='userInfo'>
+              <div>
                 <center>
-                  <a href={'https://www.freecodecamp.org/' + item.username}><img src={item.img} width='50%'height='auto' alt={item.username} /></a>
+                  <a href={'https://www.freecodecamp.org/' + item.username}><img src={item.img} width='50%' height='auto' alt={item.username} /></a>
                 </center>
-              </Col>
-              <Col xs={6}>
+              </div>
+              <div>
                 <center>
-                  <Col xs={12} className='numbers'>{this.props.alltimeToggle ? item.alltime : item.recent}</Col>
-                  <Col xs={12}>{this.props.alltimeToggle ? 'Total' : month}</Col>
+                  <div className='numbers'>{this.props.alltimeToggle ? item.alltime : item.recent}</div>
+                  <div>{this.props.alltimeToggle ? 'Total' : month}</div>
                 </center>
-              </Col>
-            </Row>
-          </Grid>
+              </div>
+            </div>
+          </div>
         )
       })
     )

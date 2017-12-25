@@ -20,7 +20,11 @@ class App extends Component {
         console.log('Alltime Users Loaded.', result.length)
         this.setState({alltime: result})
       }.bind(this))
-
+      .catch(function () {
+        return (
+          console.log('Errors')
+        )
+      })
     fetch('https://fcctop100.herokuapp.com/api/fccusers/top/recent')
       .then(function (result) {
         console.log('Recent Users Loaded.', result.length)
@@ -45,7 +49,7 @@ class App extends Component {
             <div className='homehome'>
               <a href='http://www.spazcool.com/' className='home btn buttonStyle'>Home</a>
             </div>
-            <h1>The Top Dogs</h1>
+            <h1>The fCC Top Dogs</h1>
           </div>
           <Usercard alltime={this.state.alltime} recent={this.state.recent} alltimeToggle={this.state.alltimeToggle} />
           <footer className='footer'>
