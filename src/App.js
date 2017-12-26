@@ -45,14 +45,18 @@ class App extends Component {
       return (
         <div className='App'>
           <Buts onClick={this.handleClick.bind(this)} label={this.state.alltimeToggle ? 'Recent' : 'Alltime'} />
-          <div className='App-header'>
+          <header>
             <div className='homehome'>
               <a href='http://www.spazcool.com/' className='home btn buttonStyle'>Home</a>
             </div>
-            <h1>The fCC Top Dogs</h1>
-          </div>
+            <h1>
+              <a href='https://www.freecodecamp.org/challenges/build-a-camper-leaderboard'>
+                The fCC Top Dogs
+              </a>
+            </h1>
+          </header>
           <Usercard alltime={this.state.alltime} recent={this.state.recent} alltimeToggle={this.state.alltimeToggle} />
-          <footer className='footer'>
+          <footer>
             Built by <a href='http://www.spazcool.com'>Doug Wright</a>.
             <br />
             Loading animation by <a href='http://danielhearn.co.uk/'>Daiel Hearn</a>.

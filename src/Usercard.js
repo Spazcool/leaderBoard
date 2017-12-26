@@ -20,20 +20,18 @@ class Usercard extends Component {
         return (
           <div className='user' key={item.username}>
             <div className='userTitle'>
-              <a href={'https://www.freecodecamp.org/' + item.username}>{item.username}</a>
-              <span className='ranking'>{index + 1}</span>
+              <a href={'https://www.freecodecamp.org/' + item.username}>
+                {item.username}
+              </a>
+              <div className='ranking'>{index + 1}</div>
             </div>
             <div className='userInfo'>
-              <div>
-                <center>
-                  <a href={'https://www.freecodecamp.org/' + item.username}><img src={item.img} width='50%' height='auto' alt={item.username} /></a>
-                </center>
-              </div>
-              <div>
-                <center>
-                  <div className='numbers'>{this.props.alltimeToggle ? item.alltime : item.recent}</div>
-                  <div>{this.props.alltimeToggle ? 'Total' : month}</div>
-                </center>
+              <a href={'https://www.freecodecamp.org/' + item.username}>
+                <img src={item.img} alt={item.username} />
+              </a>
+              <div className='numbers'>
+                <div style={{fontWeight: 'bold'}}>{this.props.alltimeToggle ? item.alltime : item.recent}</div>
+                <div style={{fontSize: 0.5 + 'em'}}>{this.props.alltimeToggle ? 'Total' : month}</div>
               </div>
             </div>
           </div>
