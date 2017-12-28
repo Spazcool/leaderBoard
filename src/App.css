@@ -99,6 +99,7 @@ a:hover{
 
 .userInfo img{
   border-radius: 0 0 0 3px;
+  float: left;
   min-height: 100px;
   min-width: 100px;
   width: 15%;

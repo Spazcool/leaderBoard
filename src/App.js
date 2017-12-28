@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import './App.css'
-import './loading.css'
 import fetch from './fetchData'
 import Usercard from './Usercard'
 import Buts from './Buts'
+import './App.css'
+import './loading.css'
 
 class App extends Component {
   constructor (props) {

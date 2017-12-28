@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import printMonth from './month'
 import './App.css'
-// import { Col, Row, Grid } from 'react-bootstrap'
 const month = printMonth()
 
 class Usercard extends Component {
