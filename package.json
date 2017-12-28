@@ -3,7 +3,7 @@
   "author": "Douglas Wright",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://www.spazcool.com/leaderboard/",
+  "homepage": "http://www.spazcool.com/leaderboard",
   "dependencies": {
     "flexbox": "0.0.3",
     "gh-pages": "^1.1.0",
