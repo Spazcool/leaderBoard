@@ -31,4 +31,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* [freeCodeCamp's Pomodoro Project](https://www.freecodecamp.com/challenges/build-a-pomodoro-clock)
+* [freeCodeCamp's React Leaderboard Project](https://www.freecodecamp.org/challenges/build-a-camper-leaderboard)
