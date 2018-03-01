@@ -23,7 +23,7 @@ No installation required.
 ## Authors
 
 * **Douglas Wright** - [Spazcool](https://github.com/Spazcool)
-* **Daniel Hearn** - [Daniel Hearn](http://danielhearn.co.uk/)
+* **Daniel Hearn** - [Daniel Hearn](https://github.com/DanielHearn)
 
 ## License
 
