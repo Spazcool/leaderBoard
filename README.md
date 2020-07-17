@@ -1,6 +1,6 @@
 # freeCodeCamp React.JS leaderboard
 
-This is my leaderboard, created using React, Bootstrap & HTML as one of the projects to freeCodeCamp's data visualization program.
+This is a rather simple demo of leaderboard, created using React, Bootstrap & HTML as one of the projects to freeCodeCamp's data visualization program.
 
 <p align="center">
    <img width="70%" height="300vh" src="./images/desktop.gif">
