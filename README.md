@@ -28,12 +28,10 @@ No installation required.
 ## Authors
 
 * **Douglas Wright** - [Spazcool](https://github.com/Spazcool)
-* **Daniel Hearn** - [Daniel Hearn](https://github.com/DanielHearn)
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
-
-* [freeCodeCamp's React Leaderboard Project](https://www.freecodecamp.org/challenges/build-a-camper-leaderboard)
+* **Daniel Hearn** - [Daniel Hearn](https://github.com/DanielHearn), for the CSS loader
