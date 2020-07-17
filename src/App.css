@@ -57,6 +57,7 @@ a:hover{
 
 .home{
   float: right;
+  padding: 1em;
 }
 
 .user {
@@ -84,12 +85,11 @@ a:hover{
 }
 
 .ranking{
-  font-size: 10px;
+  font-size: 1em;
   font-weight: bold;
-  padding-top: 2px;
   position: absolute;
   text-align: right;
-  width: 22.6%;
+  width: 23.3%;
 }
 
 .userInfo{
